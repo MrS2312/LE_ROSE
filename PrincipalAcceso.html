@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Le Rose</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }       
+    
+            body {
+                font-family: Arial, Helvetica, sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+    
+            /* Estilo de header */
+            header {
+                background-image: pastel;
+                background-color: rgba(39, 62, 82, 0.87);
+              
+                padding: 15px;
+                text-align: left;
+                font-size: 15px;
+                color: white;
+            }
+    
+            /* Crear 2 columnas con la misma posición en la fila */
+            nav {
+                float: left;
+                width: 30%;
+                height: 350px;
+                /* only for demonstration, should be removed */
+                background: rgb(226, 120, 48);
+                padding: 10px;
+            }
+    
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #dce2d8;
+                height: 350px;
+            }
+    
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+    
+            /* Estilo de footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+    
+            /* Responsive layout */
+            @media (max-width: 600px) {
+    
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    
+</head>
+<body>
+    <!-- Headings -->
+    <header>
+                <font face="Helverica" > <h1> LE ROSE </h1> </font>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <font size = 4>
+                    <h1 align="center">Ingresar a su cuenta 😁</h1>
+                </font>
+                <!-- ingrsa correo -->
+                <label for="correo1">Ingrese su Correo</label><br>
+                <input type="email" id="correo1" name="correo1"><br><br>
+                <!-- ingrsa contraseña -->
+                <label for="psw1">Ingrese su Contraseña </label><br>
+                <input type="password" id="psw1" name="psw1"><br><br>
+                <font size = 2.5>
+                    <h2 align="center">Si aun no tienes cuenta con nostros regístrese en el siguiente vinculo 😃</h2>
+                </font>
+                <li align="center"><a href="#">Registrar</a></li>
+                
+            </ul>
+        </nav>
+
+        <article>
+            <font color= "red", size = 10>
+                <h1 align="center">¡Ofertas!</h1>
+            </font>
+            <font color= "#808000", size = 10>
+                <p align="center" >JUEVES DE 2X1 😱</p>
+            </font>
+        </article>
+    </section>
+
+    <!-- Parrafos -->
+    <p>Los pasteles mostrados pueden variar un poco el color dependiendo del dispotivo donde se vea, por favor
+        verifique bien el color y los elementos de su orden.</p>
+</body>
+</html>
